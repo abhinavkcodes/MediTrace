@@ -145,8 +145,6 @@ MediTrace
 │   └── server.js
 │
 ├── schema.sql
-├── API_DOCUMENTATION.md
-├── INSTALLATION_GUIDE.md
 └── README.md
 ```
 
