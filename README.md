@@ -107,7 +107,7 @@ Locate nearby pharmacies and visualize medicine availability through an interact
 
 ## Architecture
 
-```text
+text
 Frontend (React + Vite)
             │
             ▼
