@@ -245,6 +245,3 @@ LinkedIn: https://www.linkedin.com/in/abhinavk71/
 
 ---
 
-## License
-
-This project is intended for educational, academic, and portfolio purposes.
