@@ -1,147 +1,250 @@
-================================================================================
-    GENERIC MEDICINE TRANSPARENCY SYSTEM
-    Complete Full-Stack Web Application
-================================================================================
+# MediTrace
 
-📦 WHAT'S INCLUDED:
-   ✅ Complete Frontend (HTML, CSS, JavaScript)
-   ✅ Complete Backend (Node.js, Express, REST API)
-   ✅ Database (MySQL with 20 sample medicines)
-   ✅ 6 Documentation Files
-   ✅ All Configuration Files
-   ✅ Ready to Run Locally
+Medicine Transparency & Store Intelligence Platform
 
-📊 STATS:
-   - 17 Files Total
-   - ~100 KB Total Size
-   - ~2,200 Lines of Code
-   - 5-Minute Setup Time
+MediTrace is a full-stack healthcare transparency platform that enables users to discover medicines, explore categories, locate nearby pharmacies, and track medicine availability across multiple stores through an interactive analytics dashboard.
 
-🎯 QUICK START:
+The system combines inventory intelligence, medicine discovery, store mapping, and category-based browsing into a single modern web application.
 
-   1. Read: START_HERE.md
-   2. Follow: INSTALLATION_GUIDE.md
-   3. Run: npm install && npm start (backend)
-   4. Run: python -m http.server 8000 (frontend)
-   5. Open: http://localhost:8000
+---
 
-🔗 API ENDPOINTS:
+## Project Preview
 
-   GET /api/medicines           - Get all medicines
-   GET /api/search?q=query      - Search medicines
-   GET /api/medicines/:id       - Get medicine by ID
-   GET /api/categories          - Get all categories
-   GET /api/medicines/category/:cat - Get by category
+### Dashboard Overview
 
-📚 DOCUMENTATION FILES:
+Provides key inventory metrics including medicine count, connected stores, stock availability, and category insights.
 
-   START_HERE.md               ⭐ Begin here!
-   QUICK_START.md             5-minute overview
-   INSTALLATION_GUIDE.md      Detailed setup
-   API_DOCUMENTATION.md       API reference
-   COMPLETE_SUMMARY.md        Full details
-   FILE_GUIDE.md             File organization
-   DELIVERY_SUMMARY.md       This delivery info
+![Dashboard](screenshots/dashboard.png)
 
-💻 CODE FILES:
+### Category Explorer
 
-   Frontend:
-   - index.html               Dashboard structure
-   - styles.css              Complete styling (1000+ lines)
-   - script.js               API integration (600+ lines)
+Browse medicines through organized healthcare categories for faster discovery.
 
-   Backend:
-   - server.js               Express app
-   - database.js             MySQL connection
-   - Medicine.js             Data model
-   - medicineController.js   API logic
-   - medicines.js            Routes
-   - backend_package.json    Dependencies
-   - backend_env.txt         Configuration
+![Categories](screenshots/categories.png)
 
-   Database:
-   - schema.sql              MySQL setup (20 medicines)
+### Medicine Search
 
-🎨 FEATURES:
+Search medicines instantly and view pricing, availability, and inventory information.
 
-   Dashboard:
-   ✅ Overview with statistics
-   ✅ Browse 20 medicines
-   ✅ Real-time search
-   ✅ Category filtering
-   ✅ Sort by price
-   ✅ Medicine detail modal
-   ✅ Responsive design
-   ✅ Dark theme
+![Search](screenshots/search.png)
 
-   API:
-   ✅ 5 REST endpoints
-   ✅ Search functionality
-   ✅ Error handling
-   ✅ CORS support
+### Store Locator
 
-   Database:
-   ✅ 20 medicines
-   ✅ 15 categories
-   ✅ Indexed for performance
+Locate nearby pharmacies and visualize medicine availability through an interactive map.
 
-⚙️ SETUP STEPS:
+![Store Locator](screenshots/store-locator.png)
 
-   Step 1: Create folders
-   mkdir backend frontend database
+---
 
-   Step 2: Setup database
-   mysql -u root -p < schema.sql
+## Features
 
-   Step 3: Setup backend
-   cd backend
-   npm install
-   npm start
+### Medicine Discovery
 
-   Step 4: Setup frontend
-   cd frontend
-   python -m http.server 8000
+* Search medicines by name
+* Browse medicines by category
+* View medicine information
+* Check inventory availability
 
-   Step 5: Open browser
-   http://localhost:8000
+### Store Intelligence
 
-✅ VERIFICATION:
+* Monitor store inventory
+* View medicine availability by location
+* Multi-store visibility
+* Availability tracking
 
-   After setup, check:
-   - Dashboard loads
-   - Shows 20 medicines
-   - Search works
-   - Category filter works
-   - API responds to requests
+### Interactive Dashboard
 
-🛠️ TECHNOLOGY:
+* Medicine statistics
+* Store statistics
+* Inventory analytics
+* Category insights
 
-   Frontend:  HTML5, CSS3, JavaScript (Vanilla)
-   Backend:   Node.js, Express.js
-   Database:  MySQL 5.7+
-   Size:      ~100 KB
+### Location-Based Search
 
-📖 NEXT STEPS:
+* Interactive map interface
+* Pharmacy location visualization
+* Nearby stock discovery
 
-   1. Open: START_HERE.md
-   2. Read: QUICK_START.md
-   3. Run: Setup commands
-   4. Test: Dashboard features
-   5. Explore: Code files
+### Modern User Experience
 
-🎯 SUPPORT:
+* Responsive interface
+* Fast search functionality
+* Clean dashboard layout
+* Real-time data presentation
 
-   Setup Issues:    See INSTALLATION_GUIDE.md
-   API Questions:   See API_DOCUMENTATION.md
-   File Questions:  See FILE_GUIDE.md
-   Everything:      See COMPLETE_SUMMARY.md
+---
 
-================================================================================
-Ready to get started? Open START_HERE.md now!
+## Technology Stack
 
-Total Files: 17
-Setup Time: 5-15 minutes
-Status: Production Ready ✅
+### Frontend
 
-Happy Coding! 💻
-================================================================================
+* React.js
+* Vite
+* Tailwind CSS
+* Recharts
+* Framer Motion
+* Leaflet Maps
+* React Leaflet
+
+### Backend
+
+* Node.js
+* Express.js
+* REST API Architecture
+
+### Database
+
+* SQLite
+* MySQL Support
+
+### Development Tools
+
+* Git
+* GitHub
+* Nodemon
+
+---
+
+## Architecture
+
+```text
+Frontend (React + Vite)
+            │
+            ▼
+      Express REST API
+            │
+            ▼
+     SQLite / MySQL
+```
+
+---
+
+## Project Structure
+
+```text
+MediTrace
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── data/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── config/
+│   ├── scripts/
+│   ├── package.json
+│   └── server.js
+│
+├── schema.sql
+├── API_DOCUMENTATION.md
+├── INSTALLATION_GUIDE.md
+└── README.md
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/abhinavkcodes/MediTrace.git
+cd MediTrace
+```
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+Backend runs on:
+
+```text
+http://localhost:5001
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## API Capabilities
+
+The backend provides RESTful endpoints for:
+
+* Medicine retrieval
+* Medicine search
+* Category management
+* Store information
+* Inventory monitoring
+* Location-based discovery
+
+Detailed API documentation is available in:
+
+```text
+API_DOCUMENTATION.md
+```
+
+---
+
+## Key Highlights
+
+* Full-stack healthcare application
+* React + Node.js architecture
+* Interactive pharmacy locator
+* Medicine transparency platform
+* Inventory intelligence dashboard
+* Category-based medicine discovery
+* RESTful backend services
+* Responsive modern interface
+
+---
+
+## Future Enhancements
+
+* User authentication
+* Real-time stock synchronization
+* Price comparison across stores
+* Prescription integration
+* Notification system
+* AI-powered medicine recommendations
+* Nearby pharmacy navigation
+
+---
+
+## Author
+
+Abhinav Kumar
+
+GitHub: https://github.com/abhinavkcodes
+
+LinkedIn: https://www.linkedin.com/in/abhinav-kumar
+
+---
+
+## License
+
+This project is intended for educational, academic, and portfolio purposes.
