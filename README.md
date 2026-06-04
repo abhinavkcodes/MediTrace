@@ -56,7 +56,6 @@ Locate nearby pharmacies and visualize medicine availability through an interact
 
 * Medicine statistics
 * Store statistics
-* Inventory analytics
 * Category insights
 
 ### Location-Based Search
