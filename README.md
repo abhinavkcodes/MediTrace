@@ -2,7 +2,7 @@
 
 Medicine Transparency & Store Intelligence Platform
 
-MediTrace is a full-stack healthcare transparency platform that enables users to discover medicines, explore categories, locate nearby pharmacies, and track medicine availability across multiple stores through an interactive analytics dashboard.
+MediTrack is a full-stack healthcare transparency platform that enables users to discover medicines, explore categories, locate nearby pharmacies, and track medicine availability across multiple stores through an interactive analytics dashboard.
 
 The system combines inventory intelligence, medicine discovery, store mapping, and category-based browsing into a single modern web application.
 
