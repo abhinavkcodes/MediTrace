@@ -241,7 +241,7 @@ Abhinav Kumar
 
 GitHub: https://github.com/abhinavkcodes
 
-LinkedIn: https://www.linkedin.com/in/abhinav-kumar
+LinkedIn: https://www.linkedin.com/in/abhinavk71/
 
 ---
 
