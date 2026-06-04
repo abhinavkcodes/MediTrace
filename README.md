@@ -1,4 +1,4 @@
-# MediTrace
+# MediTrack
 
 Medicine Transparency & Store Intelligence Platform
 
